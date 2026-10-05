@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Правила сообщества @HGDYFL</title>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f7;--surface:#fff;--ink:#16202c;--mute:#5b6b7c;--line:#d6dee8;--warn:#b86e00;--warnbg:#fff2d9;--ban:#b3261e;--banbg:#fde6e4;--acc:#1f6fd6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1720;--surface:#182331;--ink:#e8eef5;--mute:#93a3b5;--line:#2a3a4c;--warn:#f0b04a;--warnbg:#3a2b10;--ban:#ff8a80;--banbg:#3d1a18;--acc:#6aa7f5}}
+:root[data-theme="dark"]{--bg:#0f1720;--surface:#182331;--ink:#e8eef5;--mute:#93a3b5;--line:#2a3a4c;--warn:#f0b04a;--warnbg:#3a2b10;--ban:#ff8a80;--banbg:#3d1a18;--acc:#6aa7f5}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{max-width:760px;margin:0 auto;padding:44px 20px 20px}
+h1{font-size:clamp(30px,7vw,48px);line-height:1.08;margin:0 0 12px;font-weight:800;letter-spacing:-.02em}
+header p{margin:0;color:var(--mute);max-width:56ch}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav div{max-width:760px;margin:0 auto;padding:10px 20px;display:flex;gap:8px;overflow-x:auto}
+nav a{flex:none;padding:6px 14px;border-radius:99px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:14px;font-weight:500}
+nav a:hover,nav a:focus-visible{border-color:var(--acc);color:var(--acc);outline:none}
+main{max-width:760px;margin:0 auto;padding:8px 20px 60px}
+h2{font-size:24px;margin:0;font-weight:700}.sh{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:40px 0 8px}.sh svg{flex:none;width:84px;height:63px}
+.lead{color:var(--mute);margin:0 0 16px}
+.rule{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--warn);border-radius:6px;padding:16px 18px;margin:0 0 12px}
+.ban .rule{border-left-color:var(--ban)}
+.rule h3{margin:0 0 8px;font-size:18px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.rule h3 small{font:500 13px "Golos Text",sans-serif;color:var(--mute)}
+.rule p{margin:0 0 8px}.rule p:last-child{margin:0}
+.pen{display:inline-block;font-weight:700;font-size:14px;padding:3px 10px;border-radius:99px;background:var(--warnbg);color:var(--warn)}
+.ban .pen{background:var(--banbg);color:var(--ban)}
+.tip{color:var(--mute);font-size:14.5px}
+.ex{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0}
+.ex div{padding:10px 12px;border-radius:6px;font-size:14.5px;background:var(--bg)}
+.ex b{display:block;margin-bottom:2px}
+@media(max-width:480px){.ex{grid-template-columns:1fr}}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px 18px;margin:0 0 12px}
+.note h3{margin:0 0 6px;font-size:17px}.note p{margin:0 0 6px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:6px;margin:0 0 8px}
+summary{cursor:pointer;padding:12px 16px;font-weight:500}
+details p{margin:0;padding:0 16px 14px;color:var(--mute)}
+footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<header>
+<h1>Правила сообщества @HGDYFL</h1>
+<p>Правила созданы для комфортного общения. Они действуют независимо от прав и ранга, а незнание правил не освобождает от ответственности.</p>
+</header>
+<nav><div>
+<a href="#mute">Муты</a><a href="#ban">Баны</a><a href="#offtop">Оффтоп</a><a href="#combo">Комбинации</a><a href="#admins">Админам</a><a href="#faq">Вопросы</a>
+</div></nav>
+<main>
+
+<section id="mute">
+<div class="sh"><h2>⌛ Нарушения с мутом</h2><svg viewBox="0 0 96 72" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--warn)"><path d="M10 8h58a6 6 0 0 1 6 6v26a6 6 0 0 1-6 6H38L24 58V46H10a6 6 0 0 1-6-6V14a6 6 0 0 1 6-6z" fill="currentColor" fill-opacity=".14"/><path d="M18 24h34M18 33h18"/><circle cx="72" cy="50" r="17" fill="var(--bg)"/><circle cx="72" cy="50" r="13"/><path d="M72 42v8l6 4"/></svg></div>
+<p class="lead"><b>Мут</b> — временный запрет отправлять сообщения и реагировать на них. <b>SW-мут</b> удаляет сообщения участника, реагировать можно. Его выдают, только если нельзя выдать обычный мут: у человека права админа или бот не может выдавать наказания.</p>
+
+<div class="rule"><h3>🤬 Оскорбления <small>п. 1.0</small></h3>
+<p>Нельзя оскорблять участников, унижать достоинство и переходить на личности. Своё мнение высказывать можно, если оно не агрессивно.</p>
+<p class="tip">Не все слова считаются оскорблением: например, «иди нахуй» и подобные формы им не являются. Увидели переход на личности — отправьте репорт на сообщение, админы разберутся.</p></div>
+
+<div class="rule"><h3>🔥 Провокации и розжиг конфликтов <small>п. 1.1</small></h3>
+<p><span class="pen">от 1 до 3 часов</span></p>
+<p>Нельзя намеренно провоцировать человека или группу на конфликт. Мут получает тот, кто создал конфликт первым. Дискуссии разрешены — нарушением считается намеренная провокация и переход на личности.</p>
+<p class="tip">Правила 1.0 и 1.1 не действуют с 23:00 до 6:00 по МСК. Если обе стороны подтверждают, что это шутка, наказания не будет (только для этой ссоры).</p></div>
+
+<div class="rule"><h3>😢 Буллинг <small>п. 1.2</small></h3>
+<p>Постоянная травля одного или нескольких участников: регулярные насмешки, унижение личности, национальности, пола, расы, религии, преследование сообщениями. Если человек постоянно оказывается объектом насмешек — это буллинг. Увидели — отправьте репорт.</p></div>
+
+<div class="rule"><h3>☣️ Токсичность</h3>
+<p><span class="pen">30–60 минут</span></p>
+<p>Постоянная пассивная агрессия, попытки испортить настроение, придирки, намеренное раздражение участников. Одно сообщение токсичностью не считается — только регулярная порча обстановки.</p>
+<p class="tip">Срок зависит от длины нарушения: 6–30 сообщений — 30 минут, 7–10 — 50 минут, больше 10 — 60 минут.</p></div>
+
+<div class="rule"><h3>📄 Флуд и спам <small>п. 1.4</small></h3>
+<p>Нельзя массово отправлять стикеры, сообщения, медиа, реакции и бессмысленные большие тексты. Флуд и спам — от 6 сообщений включительно.</p>
+<p><span class="pen">спам 45 минут</span> <span class="pen">спам реакциями 50 минут</span> <span class="pen">флуд 30 минут</span></p></div>
+
+<div class="rule"><h3>🪜 Лестница <small>п. 1.5</small></h3>
+<p><span class="pen">от 30 до 50 минут</span></p>
+<p>Дробление одной мысли на несколько сообщений (от 6 включительно).</p>
+<div class="ex"><div><b>❌ Так нельзя</b>Привет / Как дела / Что делаешь / ?</div><div><b>✅ Так можно</b>Привет! Что делаешь?</div></div></div>
+
+<div class="rule"><h3>🗑️ Бессмысленный флуд <small>п. 1.6</small></h3>
+<p><span class="pen">80 минут</span></p>
+<p>Массовые сообщения без смысла: «А», «Ааа», «?????», «....», «Ввдлулв». Если сообщений больше 6, выдаются два наказания: бессмысленный флуд и лестница.</p>
+<p class="tip">Новичка лучше предупредить — варна достаточно. Если продолжает намеренно, выдавайте наказание.</p></div>
+</section>
+
+<section id="ban" class="ban">
+<div class="sh"><h2>🚫 Нарушения с баном</h2><svg viewBox="0 0 96 72" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--ban)"><circle cx="48" cy="36" r="27" fill="currentColor" fill-opacity=".12"/><circle cx="48" cy="27" r="6"/><path d="M35 50c0-8 6-12 13-12s13 4 13 12"/><path d="M29 55L67 17"/></svg></div>
+<p class="lead"><b>Бан</b> — блокировка: участник не видит чат и не может в него вступить.</p>
+
+<div class="rule"><h3>🔗 Обход наказания <small>п. 2.0</small></h3>
+<p><span class="pen">бан обоих аккаунтов навсегда</span></p>
+<p>Если после мута или бана зайти со второго аккаунта, оба аккаунта получают бан навсегда без обжалования. Лучше дождаться конца мута.</p></div>
+
+<div class="rule"><h3>🌍 Политика <small>п. 2.1</small></h3>
+<p><span class="pen">бан навсегда</span></p>
+<p>Любая политика, кроме обсуждения официальных новостей, — нарушение: политические дискуссии, пропаганда, обсуждение войн и политических конфликтов, попытки спровоцировать политический спор. Публикация новости без продолжения обсуждения нарушением не считается.</p></div>
+
+<div class="rule"><h3>⛔ Экстремистская символика <small>п. 2.3</small></h3>
+<p><span class="pen">бан навсегда</span></p>
+<p>Отправка свастики, символики запрещённых организаций, материалов экстремистского характера, пропаганда. Реакции со свастикой и неполные картинки, по которым понятно, что это свастика, тоже считаются.</p></div>
+
+<div class="rule"><h3>🔞 Порнография и эротика <small>п. 2.4</small></h3>
+<p><span class="pen">бан навсегда</span></p>
+<p>Запрещено любое медиа с откровенным сексуальным подтекстом, обнажённым телом или созданное для возбуждения: изображения, видео, аудио, тексты. Позы тоже считаются.</p></div>
+
+<div class="rule"><h3>💀 Треш-контент <small>п. 2.5</small></h3>
+<p><span class="pen">бан навсегда</span></p>
+<p>Расчленения, трупы, много крови, сцены насилия, тяжёлые раны. Скримеры тоже считаются.</p></div>
+</section>
+
+<section id="offtop">
+<div class="sh"><h2>🚯 Оффтоп</h2><svg viewBox="0 0 96 72" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--acc)"><path d="M48 8v60M36 68h24"/><path d="M48 14h28l8 8-8 8H48z" fill="currentColor" fill-opacity=".14"/><path d="M48 38H20l-8 8 8 8h28z" fill="currentColor" fill-opacity=".14"/></svg></div>
+<div class="note"><p>Оффтоп — сообщения не по теме (topic). Он запрещён во всех темах, кроме <b>General Chat</b> и <b>Forms &amp; Applications</b>. За оффтоп выдаётся варн.</p></div>
+</section>
+
+<section id="combo">
+<div class="sh"><h2>👑 Комбинирование нарушений</h2><svg viewBox="0 0 96 72" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--acc)"><circle cx="36" cy="36" r="22" fill="currentColor" fill-opacity=".12"/><circle cx="60" cy="36" r="22" fill="currentColor" fill-opacity=".12"/><path d="M48 30v12M42 36h12"/></svg></div>
+<div class="note"><p>Если вы знаете, что делаете, нарушения можно комбинировать.</p>
+<p>За спам можно приписать флуд и лестницу в крайних случаях — около 125 минут мута. За оскорбления можно приписать розжиг конфликта — около 4 часов 20 минут.</p>
+<p class="tip">Не уверены, что сможете приписать, — оставьте изначальное нарушение.</p></div>
+</section>
+
+<section id="admins">
+<div class="sh"><h2>⚖️ Обязанности админов</h2><svg viewBox="0 0 96 72" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--acc)"><path d="M48 10v52M30 62h36M20 22h56"/><path d="M20 22L10 44h20zM76 22L66 44h20z" fill="currentColor" fill-opacity=".14"/><path d="M10 44a10 5 0 0 0 20 0M66 44a10 5 0 0 0 20 0"/></svg></div>
+<div class="note"><p>Админ обязан быть нейтральным: покровительство участнику считается серьёзным нарушением.</p>
+<p>В обязанности входят: проверка анкет, чистка оффтопа, проверка репортов, выдача наказаний. В непонятных и сложных ситуациях админ принимает решение сам и выдаёт наказание, которое считает нужным (если это не первое наказание участника).</p></div>
+<div class="note"><h3>✏️ Наказали несправедливо или без причины?</h3>
+<p>Напишите @xecibe, приложите скриншоты с доказательствами и спокойно объясните ситуацию.</p></div>
+<div class="note"><h3>🤔 Как не получить наказание?</h3>
+<p>Общайтесь спокойно и не вступайте в конфликтные ситуации.</p></div>
+</section>
+
+<section id="faq">
+<div class="sh"><h2>📄 Частые вопросы</h2><svg viewBox="0 0 96 72" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--acc)"><circle cx="48" cy="36" r="27" fill="currentColor" fill-opacity=".12"/><path d="M39 29a9 9 0 1 1 13 8c-3 2-4 4-4 8"/><circle cx="48" cy="55" r="1.6" fill="currentColor"/></svg></div>
+<details><summary>Что будет с админом, если он накажет некорректно?</summary><p>Если некорректность доказана, он получит снятие с должности на срок от 1 до 3 дней.</p></details>
+<details><summary>Как подать анкету на админку?</summary><p>В теме Forms &amp; Applications или сообщением с анкетой.</p></details>
+<details><summary>Нашёл ошибку или недоработку в правилах. Кому сообщить?</summary><p>@xecibe. Хотите предложить новое правило — напишите идею.</p></details>
+</section>
+</main>
+<footer>Правила нашего чата @HGDYFL · редакция от 31 июля 2026</footer>
+</body>
+</html>
